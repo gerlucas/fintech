@@ -45,6 +45,7 @@
 
     ?>
     <div class="dados">
+        <h1>ID da simulação: <?php echo $id ?></h1>
         <h1>Nome: <?php echo $nomeCliente ?></h1>
         <h1>Aporte Inicial: <?php echo number_format($aporteInicial, 2, ',', '.'); ?> (R$)</h1>
         <h1>Período: <?php echo $periodo ?> meses</h1>

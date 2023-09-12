@@ -13,7 +13,7 @@
 <body>
     <?php
     require_once 'classes/autoloader.class.php';
-    R::setup('mysql:host=127.0.0.1;dbname=overmind_fintech', 'root', '');
+    R::setup('mysql:host=127.0.0.1;dbname=fintech', 'root', '');
 
     if (
         isset($_GET['nomeCliente']) && isset($_GET['aporteInicial']) &&
@@ -51,9 +51,9 @@
         echo '<p class="erro">Por favor, preencha todos os campos com valores válidos/não nulos.</p>';
     }
     ?>
-    <div class="dados">
+    <div class="dados" id="resultado">
         <?php if (isset($id)) : ?>
-            <h1>ID da simulação: <?php echo $id ?></h1>
+            <h1>ID: <?php echo $id ?></h1>
             <h1>Nome: <?php echo $nomeCliente ?></h1>
             <h1>Aporte Inicial: <?php echo number_format($aporteInicial, 2, ',', '.'); ?> (R$)</h1>
             <h1>Período: <?php echo $periodo ?> meses</h1>

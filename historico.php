@@ -21,7 +21,7 @@
 
     <?php
     require_once 'classes/autoloader.class.php';
-    R::setup('mysql:host=127.0.0.1;dbname=overmind_fintech', 'root', '');
+    R::setup('mysql:host=127.0.0.1;dbname=fintech', 'root', '');
 
     if (isset($_POST['id'])) {
         $id = $_POST['id'];

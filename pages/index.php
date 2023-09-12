@@ -15,7 +15,7 @@
 
             <?php
             $paginas = [
-                'entrada.php' => 'Simulação',
+                'entrada.html' => 'Simulação',
                 'historico.php' => 'Historico'
             ];
 
@@ -30,7 +30,7 @@
     </main>
 
     <footer>
-        <p>George Lucas e Gabriel&copy; 2023</p>
+        <p>George Lucas e Gabriel Soares &copy; 2023</p>
     </footer>
 </body>
 

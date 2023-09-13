@@ -114,11 +114,6 @@ th {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-.icon-container {
-  display: flex;
-  justify-content: center;
-}
-
 .icon-link {
   text-decoration: none;
   color: inherit;

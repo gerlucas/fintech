@@ -83,12 +83,12 @@
     </table>
     <?php endif; ?>
     <footer>
-        <div class="icon-container">
-            <a href="index.html" class="icon-link">
-                <i class="uil uil-estate"></i>
-            </a>
-        </div>
-        <p>George Lucas e Gabriel Soares &copy; 2023</p>
-    </footer>
+            <div class="icon-container">
+                <a href="index.html" class="icon-link">
+                    <i class="uil uil-estate"></i> <span class="text-icon">Página Inicial</span>
+                </a>
+            </div>
+            <p>George Lucas e Gabriel Soares &copy; 2023</p>
+        </footer>
 </body>
 </html>

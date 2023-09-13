@@ -1,10 +1,73 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f0f0f0;
-  margin: 20px;
+  background-color: #020202;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-h1 {
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2em;
+  color: white;
+}
+
+.text-container {
+  color: white;
+  font-size: 0.8em;
+}
+
+.text-span{
+  color: #aa01dd;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.index-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.index-ul li {
+  display: flex;
+  align-items: center;
+}
+
+.index-ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.index-ul li a:hover {
+  text-decoration: none;
+  color: #aa01dd;
+  transition: color 0.3s ease;
+}
+
+.index-ul li i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.index{
   font-size: 15px;
   margin-bottom: 20px;
 }
@@ -31,7 +94,7 @@ th {
 }
 
 .input-botao {
-  background-color: #0074d9;
+  background-color: #aa01dd;;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -43,7 +106,7 @@ th {
 }
 
 .input-botao:hover {
-  background-color: #0056b3;
+  background-color: #aa01dd;;
 }
 
 .input-botao:focus {
@@ -61,14 +124,6 @@ th {
   color: inherit;
   font-size: 3em;
   transition: none;
-}
-
-.index {
-  font-size: 2em;
-}
-
-.index-ul {
-  list-style-type: none;
 }
 
 .erro{

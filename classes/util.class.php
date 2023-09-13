@@ -11,7 +11,16 @@ class Util
             $aporte = ($i == 1) ? 0 : $aporteMensal;
             $rendimento = ($total + $aporte) * ($rendimentoMensal / 100);
             $total += $aporte + $rendimento;
-            $dados[] = array('mes' => $i, 'inicial' => $aporteInicial, 'aporte' => $aporte, 'rendimento' => $rendimento, 'total' => $total);
+            if($i == 1){
+                $aplicacao = $aporteInicial;
+                $aplicacaoMes = $aplicacao;
+            }
+            else{
+                $aplicacao = $total;
+                $aplicacaoMes = $total -  $aporteMensal - $rendimento;
+            }
+                
+            $dados[] = array('mes' => $i, 'aplicacao' => $aplicacao, 'aporte' => $aporte, 'rendimento' => $rendimento, 'total' => $total, 'aplicacaoMes' => $aplicacaoMes);
         }
         return array('dados' => $dados, 'total' => $total);
     }

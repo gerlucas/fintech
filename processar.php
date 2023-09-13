@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/processamento.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -66,8 +66,7 @@
     <table>
         <tr>
             <th>Mês</th>
-            <th>Valor Inicial (R$)</th>
-            <th>Aporte (R$)</th>
+            <th>Aplicação (R$)</th>
             <th>Rendimento (R$)</th>
             <th>Total (R$)</th>
         </tr>
@@ -75,8 +74,7 @@
             <?php foreach ($dados as $linha) : ?>
                 <tr>
                     <td><?php echo $linha['mes']; ?></td>
-                    <td><?php echo number_format($linha['inicial'], 2, ',', '.'); ?></td>
-                    <td><?php echo number_format($linha['aporte'], 2, ',', '.'); ?></td>
+                    <td><?php echo number_format($linha['aplicacaoMes'], 2, ',', '.'); ?></td>
                     <td><?php echo number_format($linha['rendimento'], 2, ',', '.'); ?></td>
                     <td><?php echo number_format($linha['total'], 2, ',', '.'); ?></td>
                 </tr>

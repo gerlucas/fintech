@@ -48,11 +48,10 @@
                 </div>
                 <table>
                     <tr>
-                        <th>Mês</th>
-                        <th>Valor Inicial (R$)</th>
-                        <th>Aporte (R$)</th>
-                        <th>Rendimento (R$)</th>
-                        <th>Total (R$)</th>
+                     <th>Mês</th>
+                     <th>Aplicação (R$)</th>
+                     <th>Rendimento (R$)</th>
+                     <th>Total (R$)</th>
                     </tr>
 
                     <?php
@@ -61,11 +60,10 @@
 
                     ?>
                         <tr>
-                            <td><?php echo $linha['mes']; ?></td>
-                            <td><?php echo number_format($linha['inicial'], 2, ',', '.'); ?></td>
-                            <td><?php echo number_format($linha['aporte'], 2, ',', '.'); ?></td>
-                            <td><?php echo number_format($linha['rendimento'], 2, ',', '.'); ?></td>
-                            <td><?php echo number_format($linha['total'], 2, ',', '.'); ?></td>
+                         <td><?php echo $linha['mes']; ?></td>
+                         <td><?php echo number_format($linha['aplicacaoMes'], 2, ',', '.'); ?></td>
+                         <td><?php echo number_format($linha['rendimento'], 2, ',', '.'); ?></td>
+                         <td><?php echo number_format($linha['total'], 2, ',', '.'); ?></td>
                         </tr>
 
                     <?php endforeach; ?>
